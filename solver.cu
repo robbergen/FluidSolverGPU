@@ -1,4 +1,4 @@
-#include "C:\Users\robbe\Desktop\Code\visit_writer.h"
+#include "visit_writer.h"
 #include <math.h>
 #include <cmath>
 #include <sstream>
@@ -9,7 +9,7 @@
 #include <algorithm>
 #include <future>
 #include <vector>
-#include <C:\Users\robbe\Desktop\Code\FluidGPU.cuh>
+#include "FluidGPU.cuh"
 #include <cuda_runtime.h>
 #include <thrust/sort.h>
 #include <thrust/device_ptr.h>
@@ -210,7 +210,7 @@ int main(int argc, char **argv)
 			oss << "C:\\Users\\robbe\\Desktop\\Code\\anim_s" << t / 10 << ".vtk";
 			std::string var = oss.str();
 			const char* cstr = var.c_str();
-			write_point_mesh(cstr, 0, nspts + nbpts, spts, 2, vardims3, varnames3, arrays3);
+			//write_point_mesh(cstr, 0, nspts + nbpts, spts, 2, vardims3, varnames3, arrays3);
 
 		}
 	}

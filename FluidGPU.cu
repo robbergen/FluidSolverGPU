@@ -1,4 +1,4 @@
-#include <C:\Users\robbe\Desktop\Code\FluidGPU.cuh>
+#include "FluidGPU.cuh"
 #include <cmath>
 #include <cuda_runtime.h>
 #include <iostream>
